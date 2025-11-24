@@ -146,7 +146,7 @@ describe('Teste De Fluxo', () => {
 
         //Teste Comprovante
         cy.wait('@getInstrucao');
-        cy.get('[data-cy="pagamento-form"]').find('input[type=file]').selectFile('teste.jpeg');
+        cy.get('[data-cy="pagamento-form"]').find('input[type=file]').selectFile('teste-comprovante.jpeg');
 
         cy.get('[data-cy="pagamento-form-group-observacao"]').find('[data-cy="pagamento-form-textarea-observacao"]').type("Comprovante de teste");
         
